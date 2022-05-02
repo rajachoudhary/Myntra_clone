@@ -1,0 +1,58 @@
+.landingFooter{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    
+}
+.footerPlayStoreimages{
+    display: flex;
+    gap: 0.5rem;
+}
+.footerPlayStoreimages>div>img{
+    height: 42px;
+    width: 140px;
+}
+.footerHeading,.footerKeepinTouch{
+    font-weight: 500;
+    padding: 20px;
+    padding-left: 0px;
+    color: #282C3F;
+}
+.footerKeepinTouch{
+    padding: 20px;
+}
+.landingPAgetext{
+    padding-left: 20px;
+    color: grey;
+}
+.footerSocialMediaLogoContainer{
+    padding-left: 20px;
+    display: flex;
+    gap: 0.5rem;
+}
+.footerSocialMediaLogo>img{
+    height: 20px;
+    width: 20px;
+}
+.footerOriginalLogo, .footerThirtyLogo{
+    display: flex;
+    gap: 1rem;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+   
+   
+}
+.footerOriginalLogo>div, .footerThirtyLogo>div{
+    color: grey;
+}
+.footerRightLogo{
+    padding: 20px;
+    padding-top: 30px;
+    
+
+}
+.footerBoldText{
+    font-weight: 700;
+    color: #282C3F;
+}

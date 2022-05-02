@@ -1,0 +1,118 @@
+.navbar{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 14px;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    color: black;
+    padding: 25px;
+   text-transform: uppercase;
+   font-weight: 600;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.navbar>a:hover{
+    color: #282C3F;
+    
+}
+.navbar>a{
+    color: #282C3F;
+    
+}
+.myntraLogo{
+    height: 36px;
+    width: 53px;
+    padding: 3px;
+    position: relative;
+    margin-right: 70px;
+    left: 40px;
+}
+.studioPower{
+    font-size: 10px;
+    color: red;
+}
+.navbarInput{
+    /* position: relative; */
+    width: 530px;
+    background-color: #ebe6e6;
+    position: relative;
+    top: 0px;
+    height: 40px;
+
+}
+
+.navbarInput:hover{
+    background-color: white !important; 
+}
+.navbarInput>input{
+    background-color: transparent;
+    /* opacity: 0.5; */
+    border: none;
+    outline: none;
+    width: 480px;
+    margin-left: 25px;
+    /* margin-top: 10px; */
+    height: 40px;
+
+}
+.searchButton{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    left: 12px;
+    top: 5px;
+    bottom: 10px;
+    /* color: gray; */
+}
+.navbarOption{
+    padding-top: 7px;
+}
+.navbarOption:hover{
+    text-decoration: underline 3px;
+    text-underline-offset: 38px;
+    text-decoration-color: red;
+   
+}
+
+.userIconsButton{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+.userIcons{
+    display: flex;
+    gap: 2rem;
+    font-size: 10px;
+    position: relative;
+    text-align: center;
+    left: 15px;
+}
+.navbarHover{
+    margin-top: 22px;
+    display: flex;
+   
+}
+.navberHoverContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+}
+.blackCss>a{  
+    color: rgb(91, 89, 89) !important;
+}
+.blackCss>a:hover{  
+    color: rgb(7, 7, 7) !important;
+    font-weight: 600;
+}
+.navbarHoverHeading>a{  
+    color: rgb(208, 64, 64) !important;
+    font-weight: 600;
+  
+}
+.navbarHoverHeading{  
+    /* color: rgb(208, 64, 64) !important; */
+    padding: 10px 0;
+
+}
+
