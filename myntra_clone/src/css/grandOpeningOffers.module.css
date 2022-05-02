@@ -1,0 +1,33 @@
+.grandOpeningOffersHeading{
+  width: 100%;
+}
+.grandOpeningOffersHeading>img{
+  width: 100%;
+}
+
+.grandOpeningOffersContainer{
+   display: flex;
+}
+.grandOpeningOffersContainer>div>img{
+   height: 284px;
+   width: 216px;
+}
+/*
+*.theyAreJustThatGood Css
+*/
+.theyAreJustThatGoodHeading{
+   width: 100%;
+}
+.theyAreJustThatGoodHeading>img{
+   width: 100%;
+}
+.theyAreJustThatGoodContainer{
+      display: flex;
+}
+.theyAreJustThatGoodContainer>div>img{
+   width: 253px;
+   height: 332px;
+}
+/*
+*.theyAreJustThatGood Css end
+*/
