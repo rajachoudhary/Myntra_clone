@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import { Menu, Dropdown, Space } from 'antd';
-import style from "../../../css/navbar.module.css"
+import style from "../../css/navbar.module.css"
 import { BiSearch, BiShoppingBag} from 'react-icons/bi';
-import { AiOutlineUser, AiOutlineHeart} from 'react-icons/ai';
+import {  AiOutlineHeart} from 'react-icons/ai';
+import { Profile } from './Profile';
+import { useDispatch } from 'react-redux';
+import { getAllData } from '../../Redux/action';
+import { useNavigate } from 'react-router-dom';
 const menu = (
   <Menu className={style.navbarHover}
     items={[
@@ -254,6 +258,17 @@ const menu = (
 );
 
 export const Navbar =  () =>{
+    const [query,setQuery] = useState("")
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const handleSearch = ()=>{
+        if(query){
+            console.log("query",query)
+            dispatch(getAllData(query))
+            navigate("/products")
+        }
+
+    }
     return(
         <div className={style.navbar}>
             <a href="">
@@ -310,12 +325,12 @@ export const Navbar =  () =>{
                 </a>
             </Dropdown>
             <div className={style.navbarInput}>
-                <BiSearch className={style.searchButton}/>
-                <input type="text" placeholder='Search for products brands and more'/>
+                <BiSearch className={style.searchButton} onClick={handleSearch}/>
+                <input type="text" placeholder='Search for products brands and more'value={query} onChange={(e)=>setQuery(e.target.value)}/>
             </div>
             <div className={style.userIcons}>
-                <div>
-                    <AiOutlineUser className={style.userIconsButton}/>
+                <div >
+                    <Profile  className={style.userIconsButton}/>
                     <div>Profile</div>
                 </div>
                 <div>

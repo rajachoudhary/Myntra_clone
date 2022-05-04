@@ -57,3 +57,37 @@
     font-weight: 700;
     color: #282C3F;
 }
+.footerPopularSearchesHeading{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 0;
+    margin-bottom: 25px;
+}
+.footerPopularSearchesHeading>p{
+    border: 1px solid rgb(213, 211, 211);
+    width: 800px;
+    margin: 0;
+    margin-top: 10px;
+    /* height: 1px; */
+}
+.footerPopularSearchesHeading>div{
+    margin-right: 0;
+}
+.BottomFooterText{
+    width: 70%;
+    margin: auto;
+    color: gray;
+}
+.BottomFooterContactPart{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+    color: grey;
+}
+.BottomFooterContactPart>div>span{
+    font-weight: 600;
+    color: rgb(13, 13, 146);
+}
