@@ -1,19 +1,20 @@
 
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import style from "../../css/productDetail.module.css"
 import {BsHandbagFill, BsTruck} from "react-icons/bs"
 import { AiOutlineHeart } from 'react-icons/ai'
+import { addToCart } from '../../Redux/action'
 
 export const ProductDetail = () => {
     const singleData = useSelector(state => state.singleData) 
- 
-    const handleCart = ()=>{
-        alert("Product added successfully ")
-
+    const dispatch = useDispatch()
+    const handleCart = (id)=>{
+        // console.log(id)
+        alert("Product added successfully", id)
+        dispatch(addToCart(id))
     }
   return (
-    
     <div>
         {
             singleData.map((item)=>{
@@ -50,7 +51,7 @@ export const ProductDetail = () => {
                                 <AiOutlineHeart className={style.productDetailWishlistHeart}/>
                             <div className={style.productDetailButtons}>
                                 <BsHandbagFill className={style.productDetailButtonBag}/>
-                                <button onClick={handleCart}>ADD TO BAG</button>
+                                <button onClick={()=>handleCart(item.id)}>ADD TO BAG</button>
                                 <button >WISHLIST</button>
                             </div>
                             <div className={style.productDetailDeliverySection}>

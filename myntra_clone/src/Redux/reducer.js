@@ -1,8 +1,10 @@
-import { FETCH_DATA, HANDLE_SINGLE_DATA, SORT } from "./action"
+import { CartPage } from "../Components/Pages/CartPage"
+import { CART, FETCH_DATA, HANDLE_SINGLE_DATA, SORT } from "./action"
 
 const initialState = {
     singleData:[],
-    item:[]
+    item:[],
+    cart:[]
 }
 export const reducer = (state = initialState,action) =>{
     console.log(action,"action")
@@ -27,6 +29,12 @@ export const reducer = (state = initialState,action) =>{
             return{
                 ...state,
                 singleData:[...state.item].filter((item)=> item.id === action.payload)
+            }
+        }
+        case CART :{
+            return{
+                ...state,
+                cart:[...state.cart].filter((item)=> item.id === action.payload)
             }
         }
         
