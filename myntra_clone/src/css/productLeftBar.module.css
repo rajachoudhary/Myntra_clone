@@ -1,0 +1,41 @@
+.productLeftBarCheckboxMainContanier{
+    width: 15%;
+    /* margin-left: 15px; */
+    /* border: 1px solid black; */
+    margin-top: 0;
+}
+.productLeftBarCheckboxContanier,.productLeftBarBrandContanier{
+    border-right: 1px solid rgb(235, 232, 232);
+    border-bottom: 1px solid rgb(235, 232, 232);
+   padding: 10px 0;
+    
+}
+.productLeftBarCheckbox,.productLeftBarBrandCheckbox,.productLeftBarBrandText,.productLeftBarDiscountRangeCheckbox{
+    margin-left: 35px;
+}
+.productLeftBarCheckbox>input{
+    margin-right: 18px;
+    height: 13px;
+    width: 13px;
+    /* border-radius: 50% ; */
+}
+.productLeftBarBrandCheckbox>input,.productLeftBarDiscountRangeCheckbox>input{
+    margin-right: 18px;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border: 1;
+}
+.productLeftBarBrandCheckbox>label{
+    font-weight: 400;
+    color: rgb(6, 3, 3);
+}
+.productLeftBarCheckbox>label,.productLeftBarBrandText{
+   font-weight: 600;
+}
+.productLeftBarBrandText{
+    padding: 10px 0;
+}
+.productLeftBarDiscountRangeCheckbox>label{
+    color: grey;
+}

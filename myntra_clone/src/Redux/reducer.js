@@ -1,6 +1,7 @@
-import { FETCH_DATA, SORT } from "./action"
+import { FETCH_DATA, HANDLE_SINGLE_DATA, SORT } from "./action"
 
 const initialState = {
+    singleData:[],
     item:[]
 }
 export const reducer = (state = initialState,action) =>{
@@ -20,6 +21,12 @@ export const reducer = (state = initialState,action) =>{
             return {
                 ...state,
                 item:[...state.item].sort((a,b)=>b.discountRate - a.discountRate)
+            }
+        }
+        case HANDLE_SINGLE_DATA :{
+            return{
+                ...state,
+                singleData:[...state.item].filter((item)=> item.id === action.payload)
             }
         }
         

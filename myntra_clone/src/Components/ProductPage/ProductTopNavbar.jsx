@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useDispatch} from 'react-redux'
 import {  sort } from '../../Redux/action'
-import style from "../../css/productNavbar.module.css"
+import style from "../../css/productTopNavbar.module.css"
 
 export const ProductTopNavbar = () => {
   const dispatch = useDispatch()
-  const item = useSelector(state =>state)
   
   return (
     <div>
@@ -49,7 +48,7 @@ export const ProductTopNavbar = () => {
           </div>
           <div>
             <select className={style.filterSection} onChange={(e)=>{dispatch(sort(e.target.value)) }}>
-              <option value="">Sort by : <span>Recommended</span></option>
+              <option value="">{`Sort By : ${<b>Recommended</b>}`} </option>
               <option value="">What's New</option>
               <option value="">Popularity</option>
               <option value=" ">Better Discount</option>
