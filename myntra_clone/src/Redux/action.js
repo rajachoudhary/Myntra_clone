@@ -2,7 +2,6 @@ export const GET_ALL_DATA = "GET_ALL_DATA"
 export const FETCH_DATA = "FETCH_DATA"
 export const SORT = "SORT"
 export const HANDLE_SINGLE_DATA = "HANDLE_SINGLE_DATA"
-export const HANDLE_SINGLE_FETCH_DATA = "HANDLE_SINGLE_FETCH_DATA"
 
 
 export const fetchData = (data)=>({

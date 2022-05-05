@@ -267,7 +267,10 @@ export const Navbar =  () =>{
             dispatch(getAllData(query))
             navigate("/products")
         }
+    }
 
+    const goToCartPage = ()=>{
+        navigate("/cartpage")
     }
     return(
         <div className={style.navbar}>
@@ -337,7 +340,7 @@ export const Navbar =  () =>{
                     <AiOutlineHeart className={style.userIconsButton}/>
                     <div>Wishlist</div>
                 </div>
-                <div>
+                <div onClick={goToCartPage}>
                     <BiShoppingBag className={style.userIconsButton}/>
                     <div>Bag</div>
                 </div>

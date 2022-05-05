@@ -77,7 +77,118 @@
    font-weight: 600;
 }
 
+.productSizeTextContainer{
+    display: flex;
+    gap: 2rem;
+}
+.productSizeTextContainer>div:nth-child(1){
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+}
+.productSizeTextContainer>div:nth-child(2){
+    font-weight: 600;
+    color: #FF3E6C;
+    font-size: 16px;
+}
 .productSizeContainer{
     display: flex;
     gap: 1rem;
+}
+.productSizeContainer>div{
+    border: 1px solid rgb(138, 134, 134);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding: 13px;
+    text-align: center;
+    margin: 30px 0;
+    color: black;
+    font-weight: 600;
+}
+.productDetailButtons{
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+.productDetailButtonBag{
+   position: relative;
+   color: white;
+   left: 60px;
+   bottom: -17px;
+   height: 20px;
+   width: 19px;
+}
+.productDetailButtons>button:nth-child(2){
+    margin-left: -50px;
+    width: 282px;
+    height: 54px;
+    font-size: 16px;
+    background-color: #FF3E6C;
+    color: white;
+    font-weight: 600;
+    border: none;
+
+}
+.productDetailButtons>button:nth-child(3){
+    width: 190px;
+    height: 54px;
+    font-size: 16px;
+    border: 1px solid rgb(218, 213, 213);
+    font-weight: 600;
+    
+}
+.productDetailWishlistHeart{
+    position: absolute;
+    right: 270px;
+    height: 22px;
+    width: 22px;
+    bottom: 275px;
+}
+.productDetailButtons>button:nth-child(3):hover{
+    
+    border: 1px solid rgb(19, 19, 19);
+}
+.productDetailDeliverySection{
+    display: flex;
+    gap: 1rem;
+    padding: 20px 0;
+}
+.productDetailDeliverySection>div{
+    font-weight: 700;
+}
+.productDetailDeliveryBus{
+    width: 23px;
+    height: 22px;
+}
+.productDetailPinCodeContainer{
+    border: 1px solid rgb(175, 168, 168);
+    display: flex;
+    width: 250px;
+    height: 40px;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.productDetailPinCodeContainer>input{
+    border: none;
+    outline: none;
+}
+.productDetailPinCodeContainer>div{
+   color: #FF3E6C;
+   margin-top: 7px;
+   padding-right: 10px;
+   font-weight: 600;
+}
+.productDetailBelowPinCodeText{
+    font-size: 13px;
+    color: #282C3F;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+.productDetaildeliveryInfo{
+    font-size: 16px;
+    color:#282C3F;
+    line-height: 15px;
+    padding-bottom: 25px;
 }
