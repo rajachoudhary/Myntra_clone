@@ -1,0 +1,94 @@
+.cartContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: auto;
+}
+.cartLeftContainer{
+    display: flex;
+    gap: 1rem;
+    border: 1px solid rgb(231, 227, 227);
+    width: 595px;
+    padding: 10px;
+    height: 170px;
+}
+.cartLeftContainer>div>img{
+    width: 111px;
+    height: 148px;
+}
+.cartImageRightTextBrand{
+    font-weight: 600;
+    color: #282C3F;
+}
+.cartImageRightTextTitle{
+    color: #282C3F;
+    font-size: 14px;
+}
+.cartImageRightPriceContainer{
+    display: flex;
+    gap: 1rem;
+}
+.cartImageRightPriceContainer>div:nth-child(1){
+    color: #282C3F;
+    font-size: 14px;
+    font-weight: 600;
+} 
+.cartImageRightPriceContainer>div:nth-child(2){
+    color: #94969F;
+    font-size: 14px;
+    text-decoration: line-through;
+} 
+.cartImageRightPriceContainer>div:nth-child(3){
+    color: #F16565;
+    font-size: 14px;
+} 
+.cartRightConatiner{
+    width: 265px;
+}
+.cartRightConatinerTotalProduct{
+    font-size: 12px;
+    color: #535766;
+    font-weight: 600;
+}
+.cartRightConatinerTotalMrp,
+.cartRightConatinerDiscountOnMrp,
+.cartRightConatinerCoupanDiscount,
+.cartRightConatinerConvFees{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #545a78;
+    padding: 5px 0;
+}
+.cartRightConatinerDiscountOnMrp>span{
+    color: #03A685;
+}
+.cartRightConatinerCoupanDiscount>span,
+.cartRightConatinerConvFees>span:nth-child(1){
+    color: #FF3F6C;
+}
+
+.cartRightConatinerConvFees>span:nth-child(2){
+    text-decoration: line-through;
+}
+.cartRightConatinerHrTag{
+    padding: 5px 0 5px 0;
+}
+.cartRightConatinerTotalAmount{
+    display: flex;
+    justify-content: space-between;
+    color: #282C3F;
+    font-weight: 600;
+}
+.cartRightConatinerPlaceOrderButton{
+    height: 40px;
+    font-size: 14px;
+    margin:20px 0;
+    width: 265px;
+    font-weight: 600;
+    color: white;
+    background-color: #FF3F6C;
+    border: none;
+}
+    
+    

@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useDebugValue, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import style from "../../css/productLeftBar.module.css"
+import { getAllData, sortByBrand } from '../../Redux/action'
 
 export const ProductLeftBar = () => {
+  const [checked, setChecked] = useState(false)
+  const [state,setState] = useState("")
+  const sortBycheckBox = useSelector(state => state.sortBycheckBox)
+  console.log("bybrand",sortBycheckBox)
+  const dispatch = useDispatch()
+  const handleCheckbox = (e)=>{
+    // console.log(e.target.name)
+    // setState(e.target.name)
+    // setChecked(!checked)
+    // if(checked){
+    //    dispatch (sortByBrand(state))
+    //   //  setChecked(!checked)
+    // } 
+    // else {
+    //   dispatch(getAllData())
+    //   // setChecked(checked)
+    // }
+  }
+  console.log("Raja", checked)
   return (
     <div  className={style.productLeftBarCheckboxMainContanier}>
       <div className={style.productLeftBarCheckboxContanier}>
         <div className={style.productLeftBarCheckbox}>
-          <input type="checkbox"  />
+          <input type="checkbox" onClick={(e)=>handleCheckbox(e)} checked={checked} name="men"/>
           <label>Men</label>
         </div>
         <div className={style.productLeftBarCheckbox}>

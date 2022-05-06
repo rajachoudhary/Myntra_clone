@@ -1,8 +1,11 @@
-export const GET_ALL_DATA = "GET_ALL_DATA"
+// export const GET_ALL_DATA = "GET_ALL_DATA"
 export const FETCH_DATA = "FETCH_DATA"
 export const SORT = "SORT"
 export const HANDLE_SINGLE_DATA = "HANDLE_SINGLE_DATA"
 export const CART = "CART"
+export const SORT_BY_BRAND = "SORT_BY_BRAND"
+export const  GET_ADDRESS =  "GET_ADDRESS"
+// export const FETCH_ADDRESS =  "FETCH_ADDRESS"
 
 
 export const fetchData = (data)=>({
@@ -22,6 +25,15 @@ export const addToCart = (data) => ({
     type:CART,
     payload:data
 })
+export const sortByBrand = (data) => ({
+    type:SORT_BY_BRAND,
+    payload:data
+})
+export const getAddress = (data) =>({
+    type:GET_ADDRESS,
+    payload:data
+})
+
 export const getAllData = (params)=>(dispatch)=>{
     return(
         fetch(`http://localhost:3000/data?q=${params}`)
@@ -30,5 +42,14 @@ export const getAllData = (params)=>(dispatch)=>{
             dispatch(fetchData(data))
         })
     )
+}
+export const fetchAddress = ()=>{
+    return(dispatch)=>{
+        fetch(`http://localhost:3000/address`)
+        .then((response) => response.json())
+        .then((data) => 
+            dispatch(getAddress(data))
+        )
+    }
 }
 

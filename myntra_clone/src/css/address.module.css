@@ -1,0 +1,110 @@
+.addressRightContainer{
+    border: 1px solid rgb(220, 212, 212);
+    width: 30%;
+    margin: auto;
+    padding: 15px;
+    height: 750px;
+}
+
+.addressIputField{
+    border:1px solid rgb(209, 206, 206);
+    width: 416px;
+    height: 42px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.addressIputField:hover{
+    border:1px solid rgb(14, 13, 13);
+    
+}
+.addressIputField>input{
+    border: none;
+    outline: none;
+    width: 414px;
+    padding-top: 5px;
+    
+}
+.addressIputField>label{
+    position: absolute;
+    top: -13px;
+    left: 8px;
+    background-color: white;
+    padding: 0 3px ;
+    color: grey;
+    
+}
+.addressContactText{
+    padding-bottom: 18px;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+.addressAdressText{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+}
+.addressAdressAsText{
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.addressHomeWorkButton{
+    display: flex;
+    gap: 2rem;
+}
+.addressHomeWorkButton>button{
+    width: 64px;
+    height: 27px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.addressHomeWorkButton>button:nth-child(1){
+    color: #FF3F6C;
+    border: 1px solid #FF3F6C;
+    background-color: white;
+    text-align: center;
+}
+.addressHomeWorkButton>button:nth-child(2){
+    color: #282C3F;
+    border: 1px solid #282C3F;
+    background-color: white;
+    text-align: center;
+}
+.addressDefaultAddressText{
+    margin: 30px 0;
+}
+.addressDefaultAddressText>input{
+   margin-right: 10px;
+   
+}
+.addressAddAddressButton{
+    border: 1px solid rgb(190, 185, 185);
+    height: 64px;
+    padding: 0!important;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.addressAddAddressButton>button{
+    text-align: center;
+    height: 50px;
+    padding: 0!important;
+    width: 95%;
+    font-weight: 600;
+    color: white;
+    background-color: #FF3F6C;
+    border: none;
+    border-radius: 7px;
+    
+    /* margin-left: 9px; */
+    margin: 6px 9px;
+}
+.addressHrTag{
+    width: 100%;
+    border-color: rgb(241, 237, 237);
+    margin-top: 60px;
+    padding-bottom: 15px;
+}

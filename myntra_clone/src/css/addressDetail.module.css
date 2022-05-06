@@ -1,0 +1,51 @@
+.addressDetailMainContianer{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.addressDetailSubContianer{
+    width: 639px;
+}
+.addressDetailNewAddressContianer{
+    display: flex;
+    justify-content: space-between;
+}
+.addressDetailNewAddressContianer>div:nth-child(1){
+    font-size: 16px;
+    color: #282C3F;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.addressDetailNewAddressContianer>button:nth-child(2){
+    font-size: 12px;
+    color: #282C3F;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.addressDetailDefaultAddressText{
+    font-size: 12px;
+    color: #535766;
+    
+}
+
+.addressDetailCardContainer{
+    border: 1px solid rgb(237, 235, 235);
+    padding: 20px;
+    margin: 15px 0;
+}
+.addressDetailNameText{
+    font-size: 16px;
+    color: #282C3F;
+    font-weight: 600;
+}
+.addressDetailFullAddressText{
+    display: flex;
+    gap: 0.2rem;
+    color: #424553;
+    font-size: 13px;
+}
+.addressDetailMobileNo>span{
+    font-weight: 600;
+    color: #282C3F;
+}

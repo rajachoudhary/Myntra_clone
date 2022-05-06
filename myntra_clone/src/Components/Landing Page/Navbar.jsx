@@ -270,11 +270,11 @@ export const Navbar =  () =>{
     }
 
     const goToCartPage = ()=>{
-        navigate("/cartpage")
+        navigate("/checkout/cart")
     }
     return(
         <div className={style.navbar}>
-            <a href="">
+            <a href="/">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Myntra_logo.png" alt="logo" className={style.myntraLogo} />
             </a>
             <Dropdown overlay={menu} className={style.navbarOption}  >

@@ -1,18 +1,17 @@
 import { CartPage } from "../Components/Pages/CartPage"
-import { CART, FETCH_DATA, HANDLE_SINGLE_DATA, SORT } from "./action"
+import { CART, FETCH_DATA, GET_ADDRESS, HANDLE_SINGLE_DATA, SORT, SORT_BY_BRAND } from "./action"
 
 const initialState = {
     singleData:[],
     item:[],
-    cart:[]
+    cart:[],
+    sortBycheckBox:[],
+    address:[]
 }
 export const reducer = (state = initialState,action) =>{
-    console.log(action,"action")
-    // const payload = action.paylaod
     switch(action.type){
 
         case FETCH_DATA :{
-            // console.log("state.item" , state)
             return {
                 ...state,
                 item:action.payload
@@ -34,12 +33,24 @@ export const reducer = (state = initialState,action) =>{
         case CART :{
             return{
                 ...state,
-                cart:[...state.cart].filter((item)=> item.id === action.payload)
+                cart:[...state.cart,action.payload]
             }
         }
-        
+        case SORT_BY_BRAND :{
+            return{
+                ...state,
+                item:[...state.item].filter((item)=> item.gender === action.payload)
+            }
+        }
+        case GET_ADDRESS :{
+            console.log("raja",action.payload)
+            return{
+                ...state,
+                address:action.payload
+            }
+        }
         default :
-          return  state
+        return  state
 
     }
 }
