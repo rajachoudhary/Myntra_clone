@@ -5,8 +5,7 @@ export const HANDLE_SINGLE_DATA = "HANDLE_SINGLE_DATA"
 export const CART = "CART"
 export const SORT_BY_BRAND = "SORT_BY_BRAND"
 export const  GET_ADDRESS =  "GET_ADDRESS"
-// export const FETCH_ADDRESS =  "FETCH_ADDRESS"
-
+export const REMOVE_DATA_FROM_CART = "REMOVE_DATA_FROM_CART"
 
 export const fetchData = (data)=>({
    type:FETCH_DATA,
@@ -32,6 +31,11 @@ export const sortByBrand = (data) => ({
 export const getAddress = (data) =>({
     type:GET_ADDRESS,
     payload:data
+})
+
+export const removeDataFromCart = (data)=>({
+    type:REMOVE_DATA_FROM_CART,
+    payload : data
 })
 
 export const getAllData = (params)=>(dispatch)=>{

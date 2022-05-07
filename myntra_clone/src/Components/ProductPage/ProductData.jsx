@@ -5,7 +5,7 @@ import style from "../../css/productData.module.css"
 import { handleSingleData } from '../../Redux/action'
 
 export const ProductData = () => {
-    const item = useSelector(state => state.item)
+    const storingData = useSelector(state => state.item)
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const handleSingleProduct = (id) =>{
@@ -16,7 +16,7 @@ export const ProductData = () => {
   return (
     <div className={style.productDataContainer}>
         {
-            item.map((data)=>{
+            storingData.map((data)=>{
                 return(
                     <div className={style.productDataCard} key={data.id} onClick={()=>handleSingleProduct(data.id)}>
                         <img src={data.image} alt="" className={style.productDataImage}/>

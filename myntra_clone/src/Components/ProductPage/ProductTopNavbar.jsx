@@ -48,13 +48,13 @@ export const ProductTopNavbar = () => {
           </div>
           <div>
             <select className={style.filterSection} onChange={(e)=>{dispatch(sort(e.target.value)) }}>
-              <option value="">{`Sort By : ${<b>Recommended</b>}`} </option>
+              <option value="sortByrecommended">Sort By : Recommended</option>
               <option value="">What's New</option>
               <option value="">Popularity</option>
-              <option value=" ">Better Discount</option>
+              <option value="discount">Better Discount</option>
               <option value="discountRate" >Price : High to Low</option>
-              <option value="">Price : Low to High</option>
-              <option value="">Customer Rating</option>
+              <option value="lowToHigh">Price : Low to High</option>
+              <option value="ratings">Customer Rating</option>
             </select>
           </div>
           

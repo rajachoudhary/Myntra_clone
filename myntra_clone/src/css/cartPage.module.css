@@ -90,5 +90,10 @@
     background-color: #FF3F6C;
     border: none;
 }
+.cartCrossLogo{
+    position: relative;
+    right: -250px;
+    top: -35px;
+}
     
     

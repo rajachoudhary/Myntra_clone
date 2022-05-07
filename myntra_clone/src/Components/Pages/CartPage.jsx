@@ -1,14 +1,22 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { CartNavbar } from './CartNavbar'
 import style from "../../css/cartPage.module.css"
 import { PriceDetail } from '../AddressPage/PriceDetail'
+import {ReactComponent  as CrossLogo} from "../../crossLogo.svg"
+import { removeDataFromCart } from '../../Redux/action'
 
 export const CartPage = () => {
   const cart = useSelector(state => state.cart)
+  const dispatch = useDispatch()
+  const handleRemoveProduct = (id)=>{
+      dispatch(removeDataFromCart(id))
+  }
   return (
-    <div>
+    <>
       <CartNavbar/>
+    <div style={{display:"flex",justifyContent:"center"}}>
+      <div >
       {
         cart.map((item)=>{
           return(
@@ -24,14 +32,17 @@ export const CartPage = () => {
                     <div>{item.discountRate}</div>
                     <div>{item.price}</div>
                     <div>{item.discount}</div>
+                    <CrossLogo className={style.cartCrossLogo} onClick={()=>handleRemoveProduct(item.id)}/>
                   </div>
                 </div>
               </div>
-              <PriceDetail/>
             </div>
           )
         })
       }
+      </div>
+      <PriceDetail/>
     </div>
+    </>
   )
 }
