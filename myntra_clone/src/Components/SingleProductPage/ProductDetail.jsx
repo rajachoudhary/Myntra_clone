@@ -3,7 +3,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import style from "../../css/productDetail.module.css"
 import {BsHandbagFill, BsTruck} from "react-icons/bs"
-import { AiOutlineHeart } from 'react-icons/ai'
+// import { AiOutlineHeart } from 'react-icons/ai'
 import { addToCart } from '../../Redux/action'
 
 export const ProductDetail = () => {
@@ -47,7 +47,7 @@ export const ProductDetail = () => {
                         })
                     }
                 </div>
-                    <AiOutlineHeart className={style.productDetailWishlistHeart}/>
+                    {/* <AiOutlineHeart className={style.productDetailWishlistHeart}/> */}
                 <div className={style.productDetailButtons}>
                     <BsHandbagFill className={style.productDetailButtonBag}/>
                     <button onClick={()=>handleCart(singleData1.id)}>ADD TO BAG</button>

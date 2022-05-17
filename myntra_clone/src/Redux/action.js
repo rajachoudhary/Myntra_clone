@@ -38,6 +38,8 @@ export const removeDataFromCart = (data)=>({
     payload : data
 })
 
+
+
 export const getAllData = (params)=>(dispatch)=>{
     return(
         fetch(`http://localhost:3000/data?q=${params}`)

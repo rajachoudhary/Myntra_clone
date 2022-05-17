@@ -1,5 +1,5 @@
 import { CartPage } from "../Components/Pages/CartPage"
-import { CART, FETCH_DATA, GET_ADDRESS, HANDLE_SINGLE_DATA, REMOVE_DATA_FROM_CART, SORT, SORT_BY_BRAND } from "./action"
+import { CART, FETCH_DATA, GET_ADDRESS, HANDLE_SINGLE_DATA,  REMOVE_DATA_FROM_CART, SORT, SORT_BY_BRAND } from "./action"
 
 const initialState = {
     storingData:[],
@@ -74,6 +74,8 @@ export const reducer = (state = initialState,{type, payload}) =>{
                 cart:[...state.cart].filter((item)=>item.id !== payload)
             }
         }
+      
+
         default :
         return  state
 

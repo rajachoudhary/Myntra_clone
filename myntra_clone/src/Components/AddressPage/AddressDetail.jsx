@@ -1,8 +1,9 @@
 import React from 'react'
 import style from "../../css/addressDetail.module.css"
 import styles from "../../css/cartPage.module.css"
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { fetchAddress, removeAddress } from '../../Redux/action'
 
 
 export const AddressDetail = () => {
@@ -12,11 +13,20 @@ export const AddressDetail = () => {
     let totalMrp = cart.reduce((ac,cv)=> ac + cv.price,0)
     let totalAmount = cart.reduce((ac,cv)=> ac + cv.discountRate,0)
     let discountMrp = totalMrp-totalAmount
+    const dispatch = useDispatch()
   
     const handlePayment = ()=>{
       navigate("/checkout/payment")
     }
-  console.log("address",address)
+    const handleRemove = (id) => {
+        fetch(`http://localhost:3000/address/${id}`,{
+          method:"DELETE"
+        })
+        dispatch(fetchAddress())
+        window.location.reload(true)
+
+    }
+  // console.log("address",address)
   return (
       <div className={style.addressDetailMainContianer}>
         <div className={style.addressDetailSubContianer}>
@@ -39,6 +49,7 @@ export const AddressDetail = () => {
                       <div>{item.pinCode}</div>
                     </div>
                     <div className={style.addressDetailMobileNo}>Mobile: <span>{item.mobileNo}</span></div>
+                    <button style={{fontSize:"14px",color:"#282C3F",fontWeight:"600",margin:"10px 0"}} onClick={()=>handleRemove(item.id)}>Remove</button>
                   </div>
                 )
               })

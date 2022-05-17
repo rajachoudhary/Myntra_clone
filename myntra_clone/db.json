@@ -239,17 +239,93 @@
         38
       ],
       "discount": "60% OFF"
+    },
+    {
+      "id": 12,
+      "title": "mMen Slim Casual Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7488103/2019/8/22/acfba45f-8f9c-4b97-b5bc-a909418bdf4c1566454100620-Dennis-Lingo-Men-Green-Slim-Fit-Solid-Casual-Shirt-358156645-3.jpg",
+      "price": 1849,
+      "ratings": 4.2,
+      "brand": "HIGHLANDER",
+      "gender": "WOMEN",
+      "totalBuy": "4.4k",
+      "discountRate": 684,
+      "size": [
+        38,
+        40,
+        42,
+        46,
+        48
+      ],
+      "discount": "50% OFF"
+    },
+    {
+      "id": 12,
+      "title": "mMen Slim Casual Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg",
+      "price": 1499,
+      "ratings": 4,
+      "brand": "Roadster",
+      "gender": "men",
+      "totalBuy": "21.3k",
+      "discountRate": 704,
+      "size": [
+        38,
+        40,
+        42,
+        46,
+        48
+      ],
+      "discount": "53% OFF"
+    },
+    {
+      "id": 13,
+      "title": "Men Slim Fit Casual Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2347555/2019/12/3/77c23017-fd9d-4ad8-95f5-8722154e85ac1575361938857-HIGHLANDER-Men-White--Blue-Slim-Fit-Striped-Casual-Shirt-304-1.jpg",
+      "price": 1149,
+      "ratings": 4.1,
+      "brand": "HIGHLANDER",
+      "gender": "men",
+      "totalBuy": "7.1k",
+      "discountRate": 643,
+      "size": [
+        38,
+        40,
+        42,
+        46,
+        48
+      ],
+      "discount": "44% OFF"
+    },
+    {
+      "id": 14,
+      "title": "Men Slim Fit Casual Shirt",
+      "image": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9951411/2019/8/5/fe1322b7-9e53-4b6e-8423-0a4f5a9e8b4b1565006161882-Roadster-Men-Shirts-8701565006159466-1.jpg",
+      "price": 2099,
+      "ratings": 4.2,
+      "brand": "Levis",
+      "gender": "men",
+      "totalBuy": "1.2k",
+      "discountRate": 1049,
+      "size": [
+        38,
+        40,
+        42,
+        46,
+        48
+      ],
+      "discount": "50% OFF"
     }
   ],
   "address": [
     {
       "name": "raja",
-      "mobileNo": "456466",
-      "pinCode": "2134234",
-      "address": "sdfasdf",
-      "locality": "asdfsf",
-      "city": "asdfasdf",
-      "state": "sdfasdf",
+      "mobileNo": "32412312154",
+      "pinCode": "234234",
+      "address": "fsadfsfsf",
+      "locality": "faffasf",
+      "city": "asdfsdf",
+      "state": "adsfasf",
       "id": 1
     }
   ]
