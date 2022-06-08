@@ -19,7 +19,7 @@ export const AddressDetail = () => {
       navigate("/checkout/payment")
     }
     const handleRemove = (id) => {
-        fetch(`http://localhost:3000/address/${id}`,{
+        fetch(`https://my-myntra-clone-api.herokuapp.com/address/${id}`,{
           method:"DELETE"
         })
         dispatch(fetchAddress())

@@ -42,7 +42,7 @@ export const removeDataFromCart = (data)=>({
 
 export const getAllData = (params)=>(dispatch)=>{
     return(
-        fetch(`http://localhost:3000/data?q=${params}`)
+        fetch(`https://my-myntra-clone-api.herokuapp.com/data?q=${params}`)
         .then((response) => response.json())
         .then((data) => {
             dispatch(fetchData(data))
@@ -51,7 +51,7 @@ export const getAllData = (params)=>(dispatch)=>{
 }
 export const fetchAddress = ()=>{
     return(dispatch)=>{
-        fetch(`http://localhost:3000/address`)
+        fetch(`https://my-myntra-clone-api.herokuapp.com/address`)
         .then((response) => response.json())
         .then((data) => 
             dispatch(getAddress(data))

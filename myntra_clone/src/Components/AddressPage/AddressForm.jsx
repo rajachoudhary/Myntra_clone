@@ -18,7 +18,7 @@ export const AddressForm = () => {
     setQuery({...query,[name]:value})
   }
   const handleAddress = ()=>{
-    fetch("http://localhost:3000/address",{
+    fetch("https://my-myntra-clone-api.herokuapp.com/address",{
       method: "POST",
       headers:{
        "Content-Type": "application/json",
