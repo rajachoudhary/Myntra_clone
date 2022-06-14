@@ -19,11 +19,12 @@ export const AddressDetail = () => {
       navigate("/checkout/payment")
     }
     const handleRemove = (id) => {
+      console.log("raja",id)
         fetch(`https://my-myntra-clone-api.herokuapp.com/address/${id}`,{
           method:"DELETE"
         })
         dispatch(fetchAddress())
-        window.location.reload(true)
+        // window.location.reload(true)
 
     }
   // console.log("address",address)

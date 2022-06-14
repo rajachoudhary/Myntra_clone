@@ -8,7 +8,7 @@ export const Address = () => {
   const [state, setState] = useState([])
   const [form,setForm] = useState(false)
   useEffect(()=>{
-    fetch("http://localhost:3000/address")
+    fetch("https://my-myntra-clone-api.herokuapp.com/address")
     .then(res=>res.json())
     .then((res)=>{
       setState(res)
